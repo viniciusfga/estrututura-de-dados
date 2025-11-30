@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/estrutura-de-dados.iml" filepath="$PROJECT_DIR$/estrutura-de-dados.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Indice-Nodos-Recursao/indice-nodos-recursao.iml" filepath="$PROJECT_DIR$/Indice-Nodos-Recursao/indice-nodos-recursao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/indice-nodos-recursao.iml" filepath="$PROJECT_DIR$/POO/indice-nodos-recursao.iml" />
     </modules>
   </component>
 </project>
