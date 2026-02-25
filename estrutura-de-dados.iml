@@ -5,8 +5,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Cartilha/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/FundamentosED/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/POO/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lista/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

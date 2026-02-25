@@ -14,22 +14,7 @@ Este repositório contém:
 ---
 
 # 🗺️ Roadmap de Aprendizado
-Cada módulo corresponde a um capítulo do livro:
 
-1. Cartilha de Java
-2. Projeto Orientado a Objetos
-3. Índices, Nodos e Recursão
-4. Ferramentas de Análise
-5. Pilhas e Filas
-6. Listas e Iteradores
-7. Árvores
-8. Heaps e Filas de Prioridade
-9. Tabelas Hash, Mapas e Skip Lists
-10. Árvores de Pesquisa
-11. Ordenação, Conjuntos e Seleção
-12. Strings e Programação Dinâmica
-13. Algoritmos em Grafos
-14. Memória  
-    A. Fatos Matemáticos Úteis
+
 
 ---
