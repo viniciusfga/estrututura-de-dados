@@ -1,0 +1,20 @@
+@startuml
+
+class Vetor {
+
+  -elementos: String[]
+  -tamanho: int
+
+  +Vetor()
+  +Vetor(capacidade:int)
+  +adiciona(elemento:String): boolean
+  +adiciona(posicao:int, elemento:String): boolean
+  +busca(posicao:int): String
+  +busca(elemento:String): int
+  +tamanho(): int
+  +remove(posicao:int): void
+  +toString(): String
+
+}
+
+@enduml
