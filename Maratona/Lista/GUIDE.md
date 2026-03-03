@@ -1,16 +1,16 @@
-# 🔰 Lista de Exercícios de Listas em Java — Estruturas de Dados
+# 🔰 ListaLinear de Exercícios de Listas em Java — Estruturas de Dados
 
 Esta maratona tem como objetivo ensinar progressivamente a implementação manual de listas em Java, desde listas estáticas até listas circulares.
 
 ---
 
-## 📘 Nível 1 — Lista Estática (Array Fixo)
+## 📘 Nível 1 — ListaLinear Estática (Array Fixo)
 
 🔹 *Objetivo: entender como implementar uma lista usando array fixo e controle manual do tamanho.*
 
 ### 📘 Exercícios (01–10)
 
-1. Criar a classe Lista com um array de tamanho 10 e atributo tamanho.
+1. Criar a classe ListaLinear com um array de tamanho 10 e atributo tamanho.
 
 2. Criar método inserirFim(int valor).
 
@@ -32,7 +32,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## 📗 Nível 2 — Lista Estática Dinâmica (Resize)
+## 📗 Nível 2 — ListaLinear Estática Dinâmica (Resize)
 
 🔹 *Objetivo: implementar crescimento automático da lista.*
 
@@ -60,7 +60,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## 📙 Nível 3 — Lista Encadeada Simples
+## 📙 Nível 3 — ListaLinear Encadeada Simples
 
 🔹 *Objetivo: entender estrutura baseada em nós e ponteiros.*
 
@@ -68,7 +68,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 21. Criar classe No com valor e referência prox.
 
-22. Criar classe Lista com atributo inicio.
+22. Criar classe ListaLinear com atributo inicio.
 
 23. Criar método inserirInicio(int valor).
 
@@ -88,7 +88,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## 📕 Nível 4 — Lista Encadeada com Cabeça
+## 📕 Nível 4 — ListaLinear Encadeada com Cabeça
 
 🔹 *Objetivo: eliminar casos especiais usando nó cabeça.*
 
@@ -116,7 +116,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## 📓 Nível 5 — Lista Duplamente Encadeada
+## 📓 Nível 5 — ListaLinear Duplamente Encadeada
 
 🔹 *Objetivo: permitir navegação para frente e para trás.*
 
@@ -124,7 +124,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 41. Criar classe No com valor, prox e ant.
 
-42. Criar classe Lista com inicio e fim.
+42. Criar classe ListaLinear com inicio e fim.
 
 43. Criar método inserirInicio(int valor).
 
@@ -144,7 +144,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## 📔 Nível 6 — Lista Circular
+## 📔 Nível 6 — ListaLinear Circular
 
 🔹 *Objetivo: implementar estrutura onde o último aponta para o primeiro.*
 
@@ -176,7 +176,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## Nível 1 - Lista Estática (01 a 10)
+## Nível 1 - ListaLinear Estática (01 a 10)
 
 1. [Exercicio01](./Maratona/Lista/src/Nivel_1/Exercicio01.java)
 2. [Exercicio02](./Maratona/Lista/src/Nivel_1/Exercicio02.java)
@@ -191,7 +191,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## Nível 2 - Lista Estática Dinâmica (11 a 20)
+## Nível 2 - ListaLinear Estática Dinâmica (11 a 20)
 
 11. [Exercicio11](./Maratona/Lista/src/Nivel_2/Exercicio11.java)
 12. [Exercicio12](./Maratona/Lista/src/Nivel_2/Exercicio12.java)
@@ -206,7 +206,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## Nível 3 - Lista Encadeada Simples (21 a 30)
+## Nível 3 - ListaLinear Encadeada Simples (21 a 30)
 
 21. [Exercicio21](./Maratona/Lista/src/Nivel_3/Exercicio21.java)
 22. [Exercicio22](./Maratona/Lista/src/Nivel_3/Exercicio22.java)
@@ -221,7 +221,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## Nível 4 - Lista com Cabeça (31 a 40)
+## Nível 4 - ListaLinear com Cabeça (31 a 40)
 
 31. [Exercicio31](./Maratona/Lista/src/Nivel_4/Exercicio31.java)
 32. [Exercicio32](./Maratona/Lista/src/Nivel_4/Exercicio32.java)
@@ -236,7 +236,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## Nível 5 - Lista Duplamente Encadeada (41 a 50)
+## Nível 5 - ListaLinear Duplamente Encadeada (41 a 50)
 
 41. [Exercicio41](./Maratona/Lista/src/Nivel_5/Exercicio41.java)
 42. [Exercicio42](./Maratona/Lista/src/Nivel_5/Exercicio42.java)
@@ -251,7 +251,7 @@ Esta maratona tem como objetivo ensinar progressivamente a implementação manua
 
 ---
 
-## Nível 6 - Lista Circular (51 a 60)
+## Nível 6 - ListaLinear Circular (51 a 60)
 
 51. [Exercicio51](./Maratona/Lista/src/Nivel_6/Exercicio51.java)
 52. [Exercicio52](./Maratona/Lista/src/Nivel_6/Exercicio52.java)

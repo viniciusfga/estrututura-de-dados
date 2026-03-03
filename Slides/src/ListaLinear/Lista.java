@@ -1,4 +1,9 @@
-package Lista;
+package ListaLinear;
+
+/**
+ * Implementação de uma Lista Linear Sequencial utilizando Arrays.
+ * Esta estrutura possui tamanho fixo definido na instanciação.
+ */
 
 public class Lista {
 

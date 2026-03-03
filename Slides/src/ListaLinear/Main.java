@@ -1,4 +1,4 @@
-package Lista;
+package ListaLinear;
 
 
 import java.util.InputMismatchException;

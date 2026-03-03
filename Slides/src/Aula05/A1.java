@@ -1,3 +1,5 @@
+package Aula05;
+
 public class A1 {
 
     // Criar o método para inserção no início da Lista estática.
