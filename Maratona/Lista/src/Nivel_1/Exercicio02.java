@@ -15,15 +15,17 @@ public class Exercicio02 {
             quantidade = 0;
         }
 
-        public void inserirFim(int dados) throws Exception {
+        public void inserirFim(int valor) throws Exception {
             // VEIRIFCAR SE ESTÁ CHEIA
-            if (quantidade == elementos.length) {
+            if (quantidade == CAPACIDADE) {
                 throw new Exception("Lista cheia!");
             }
 
-            elementos[quantidade] = dados;
+            elementos[quantidade] = valor;
             quantidade++;
         }
+
     }
 }
+
 

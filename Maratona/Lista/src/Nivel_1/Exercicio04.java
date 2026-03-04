@@ -1,36 +1,53 @@
 package Nivel_1;
 
-//Inserir 5 valores e imprimir manualmente o array.
+//Criar método imprimir() para mostrar todos os elementos da lista.
 
 public class Exercicio04 {
 
     public static class ListaEstatica {
-        private int[] elementos;           // Array que armazena os dados
-        private int quantidade;            // Quantidade atual de elementos na lista
-        // final int CAPACIDADE = 10; // Capacidade máxima da lista
 
-        public ListaEstatica(int CAPACIDADE) {
-            this.elementos = new int[CAPACIDADE];
+        private int[] elementos;
+        private int quantidade;
+
+        public ListaEstatica(int capacidade) {
+            this.elementos = new int[capacidade];
             this.quantidade = 0;
         }
 
-        public void inserirFim(int dados) throws Exception {
-
-            if (quantidade == elementos.length) {
-                throw new Exception("Lista Cheia!");
+        public void inserirFim(int valor) throws Exception {
+            // VAZIO
+            if (full()) {
+                throw new Exception("Lista Cheia");
             }
 
-            elementos[quantidade] = dados;
+            elementos[quantidade] = valor;
             quantidade++;
+
+        }
+
+        private boolean full() {
+            return quantidade == elementos.length;
+        }
+
+        public void imprimir() {
+            for (int i = 0; i < elementos.length; i++) {
+                System.out.println(elementos[i] + " ");
+            }
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         ListaEstatica lista = new ListaEstatica(10);
 
+        lista.inserirFim(1);
+        lista.inserirFim(2);
+        lista.inserirFim(3);
         lista.inserirFim(4);
+        lista.inserirFim(2);
 
+        lista.imprimir();
 
     }
+
 }

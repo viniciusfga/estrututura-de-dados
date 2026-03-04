@@ -1,17 +1,16 @@
 package Nivel_1;
 
-// Criar método inserirFim(int valor).
+// Inserir 5 valores e imprimir manualmente o array.
 
 public class Exercicio03 {
 
-    public static class Lista {
+    public static class ListaEstatica {
 
         int[] elementos;           // Array que armazena os dados
         int quantidade;            // Quantidade atual de elementos na lista
-        final int CAPACIDADE = 10; // Capacidade máxima da lista
 
-        public Lista() {
-            elementos = new int[CAPACIDADE];
+        public ListaEstatica(int capacidade) {
+            elementos = new int[capacidade];
             quantidade = 0;
         }
 
@@ -24,5 +23,21 @@ public class Exercicio03 {
             elementos[quantidade] = dados;
             quantidade++;
         }
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        ListaEstatica lista = new ListaEstatica(10);
+
+        lista.inserirFim(1);
+        lista.inserirFim(2);
+        lista.inserirFim(3);
+        lista.inserirFim(4);
+        lista.inserirFim(2);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(lista.elementos[i] + " ");
+        }
+
     }
 }
