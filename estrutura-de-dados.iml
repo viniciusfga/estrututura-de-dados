@@ -8,7 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/POO/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Lista/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Slides/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Maratona/Lista/Lista Estática/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Maratona/Lista/Lista Estatica/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Maratona/Lista/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

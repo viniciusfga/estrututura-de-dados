@@ -1,11 +1,11 @@
 package Nivel_1;
 
+// Criar método inserirFim(int valor).
 
-public class Exercicio01 {
-
-    // Criar a classe Lista com um array de tamanho 10 e atributo tamanho.
+public class Exercicio03 {
 
     public static class Lista {
+
         int[] elementos;           // Array que armazena os dados
         int quantidade;            // Quantidade atual de elementos na lista
         final int CAPACIDADE = 10; // Capacidade máxima da lista
@@ -13,6 +13,16 @@ public class Exercicio01 {
         public Lista() {
             elementos = new int[CAPACIDADE];
             quantidade = 0;
+        }
+
+        public void inserirFim(int dados) throws Exception {
+
+            if (quantidade == elementos.length) {
+                throw new Exception("Lista Cheia!");
+            }
+
+            elementos[quantidade] = dados;
+            quantidade++;
         }
     }
 }

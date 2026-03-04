@@ -1,11 +1,11 @@
 package Aula05;
 
+// Criar o método para inserção no início da Lista estática.
+
 public class A1 {
 
-    // Criar o método para inserção no início da Lista estática.
-
     public static class listaEstatica {
-        private int[] elementos;
+        private final int[] elementos;
         private int tamanho;
 
         public listaEstatica(int capacidade) {
