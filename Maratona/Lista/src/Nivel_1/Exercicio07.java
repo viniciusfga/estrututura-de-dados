@@ -1,14 +1,9 @@
 package Nivel_1;
 
-/*
-    Criar método inserirPosicao(int valor, int pos).
-        Verificar se a lista está cheia
-        Verificar se a posição é válida
-        Deslocar elementos para a direita
-        Inserir o valor na posição
-        Incrementar quantidade
- */
-public class Exercicio06 {
+import java.util.Arrays;
+
+//Criar método removerFim().
+public class Exercicio07 {
 
     public static class ListaEstatica {
 
@@ -82,23 +77,40 @@ public class Exercicio06 {
 
             elementos[pos] = valor;
             quantidade++;
+        }
 
+        public void removerFim() throws Exception{
 
+            if (estaVazia()) {
+                throw new Exception("Lista vazia.");
+            }
+
+            quantidade--;
+        }
+
+        public String toString() {
+            return Arrays.toString(Arrays.copyOf(elementos, quantidade));
         }
     }
 
     public static void main(String[] args) throws Exception {
 
-        ListaEstatica lista = new ListaEstatica(10);
+        Exercicio07.ListaEstatica lista = new Exercicio07.ListaEstatica(6);
 
         lista.inserirInicio(1);
         lista.inserirInicio(2);
         lista.inserirInicio(3);
-        lista.inserirPosicao(7, 8);
+        System.out.println(lista.toString());
+
+        lista.inserirPosicao(7, 1);
+        System.out.println(lista.toString());
+
         lista.inserirInicio(4);
         lista.inserirFim(2);
+        System.out.println(lista.toString());
 
-        lista.imprimir();
+        lista.removerFim();
+        System.out.println(lista.toString());
 
     }
 }
