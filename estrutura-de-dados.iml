@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Curso/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Listas/Escadeada/src" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/Listas/Estatica/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Listas/Encadeada/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
