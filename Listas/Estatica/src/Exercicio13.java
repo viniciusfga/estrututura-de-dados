@@ -3,7 +3,7 @@ public class Exercicio13 {
     /*
     Escreva um método public void inverter() que inverta a ordem dos
     elementos da lista atual. O primeiro elemento passa a ser o último, o segundo passa a ser
-    o penúltimo, e assim por diante. A inversão não pode instanciar uma nova Lista ou um
+    o penúltimo, e assim por diante. A inversão não pode instanciar uma nova Generics.Lista ou um
     novo vetor auxiliar.
     */
 

@@ -1,6 +1,6 @@
 package Aula05;
 
-// Criar o método para inserção no início da Lista estática.
+// Criar o método para inserção no início da Generics.Lista estática.
 
 public class A1 {
 

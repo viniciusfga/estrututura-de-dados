@@ -2,7 +2,7 @@ package Aula05;
 
 public class A2 {
 
-    // Criar o método para inserção em qualquer posição da Lista estática (inserção em ordem).
+    // Criar o método para inserção em qualquer posição da Generics.Lista estática (inserção em ordem).
     public static class listaEstatica {
 
         private int[] elementos;

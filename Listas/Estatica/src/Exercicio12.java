@@ -1,7 +1,7 @@
 public class Exercicio12 {
 
     /*
-    Escreva um método public void concatenar(Lista l2) que receba uma
+    Escreva um método public void concatenar(Generics.Lista l2) que receba uma
     segunda lista l2 e adicione todos os elementos dela ao final da lista atual. Se o array da
     lista atual não tiver espaço suficiente para todos os elementos de l2, o método deve inserir
     até onde couber e parar.

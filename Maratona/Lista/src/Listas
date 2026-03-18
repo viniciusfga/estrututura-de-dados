@@ -1,0 +1,59 @@
+classDiagram
+direction TB
+
+class Generics.Lista {
+    <<abstract>>
+    + void inserirInicio(Object item)
+    + void inserirMeio(Object item)
+    + void inserirFim(Object item)
+    + Object removerInicio()
+    + Object remover(Object chave)
+    + Object removerFim()
+    + Object buscar(Object chave)
+    + boolean vazia()
+    + boolean cheia()
+    + void imprimir()
+}
+
+class Generics.Estatica {
+    - Object[] dados
+    - int tamanho
+    - int capacidade
+}
+
+class Dinamica {
+    - Generics.Nodo head
+    - Generics.Nodo ultimo
+}
+
+class EncadeadaCircular {
+    - Generics.Nodo head
+    - Generics.Nodo ultimo
+}
+
+class Dupla {
+    - Generics.Nodo head
+    - Generics.Nodo ultimo
+}
+
+class DuplaCircular {
+    - Generics.Nodo head
+    - Generics.Nodo ultimo
+}
+
+class Generics.Nodo {
+    - Object dado
+    - Generics.Nodo prox
+    - Generics.Nodo ant
+}
+
+Generics.Lista <|-- Generics.Estatica
+Generics.Lista <|-- Dinamica
+Generics.Lista <|-- EncadeadaCircular
+Generics.Lista <|-- Dupla
+Generics.Lista <|-- DuplaCircular
+
+Dinamica --> Generics.Nodo
+EncadeadaCircular --> Generics.Nodo
+Dupla --> Generics.Nodo
+DuplaCircular --> Generics.Nodo

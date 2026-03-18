@@ -79,7 +79,7 @@ public class ListaDinamica {
 
         // Caso 1: lista vazia ou menor que o primeiro
         if (vazia()) {
-            System.out.println("Lista Vazia");
+            System.out.println("Generics.Lista Vazia");
             return;
         }
 
@@ -124,7 +124,7 @@ public class ListaDinamica {
     public void imprimir() {
 
         if (vazia()) {
-            System.out.println("Lista vazia");
+            System.out.println("Generics.Lista vazia");
             return;
         }
 

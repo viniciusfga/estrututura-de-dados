@@ -46,7 +46,7 @@ public class ListaStringManipulator {
         // Chamada do método solicitado
         NoChar lista = strcreate(charArray);
 
-        System.out.print("Lista criada: ");
+        System.out.print("Generics.Lista criada: ");
         imprimirLista(lista);
     }
 }

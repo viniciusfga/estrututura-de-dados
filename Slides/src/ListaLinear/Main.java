@@ -34,7 +34,7 @@ public class Main {
                     default -> System.out.println("Inválido");
                 }
 
-                System.out.print("Lista atual: ");
+                System.out.print("Generics.Lista atual: ");
                 l.imprimir();
 
             } catch (InputMismatchException e) {

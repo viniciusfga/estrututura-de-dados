@@ -1,7 +1,7 @@
 public class Exercicio14 {
 
     /*
-    Escreva um método public Lista intercalar(Lista l2) que retorne uma
+    Escreva um método public Generics.Lista intercalar(Generics.Lista l2) que retorne uma
     terceira lista contendo os elementos da lista atual e da lista l2 intercalados (um da
     primeira, um da segunda, um da primeira...). Se uma lista for maior que a outra, os
     elementos restantes da lista maior devem ser adicionados ao final da nova lista.

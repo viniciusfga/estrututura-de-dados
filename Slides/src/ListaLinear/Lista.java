@@ -1,7 +1,7 @@
 package ListaLinear;
 
 /**
- * Implementação de uma Lista Linear Sequencial utilizando Arrays.
+ * Implementação de uma Generics.Lista Linear Sequencial utilizando Arrays.
  * Esta estrutura possui tamanho fixo definido na instanciação.
  */
 
@@ -53,7 +53,7 @@ public class Lista {
     public Object retira(Object valor) throws Exception {
 
         if (vazia())
-            throw new Exception("Erro: Lista vazia");
+            throw new Exception("Erro: Generics.Lista vazia");
 
         int pos = -1;
 

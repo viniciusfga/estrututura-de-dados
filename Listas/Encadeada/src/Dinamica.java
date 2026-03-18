@@ -1,4 +1,4 @@
-public class Encadeada {
+public class Dinamica {
 
     No primeiro = null;
 
@@ -10,7 +10,7 @@ public class Encadeada {
 
     public boolean trocar(int i, int j) {
 
-        // Lista vazia ou posições negativas
+        // Generics.Lista vazia ou posições negativas
         if (primeiro == null || i < 0 || j < 0) return false;
         if (i == j) return true;
 
@@ -72,9 +72,9 @@ public class Encadeada {
         atual.proximo = novo;
     }
 
-    public static Encadeada intercalar(Encadeada L1, Encadeada L2) {
+    public static Dinamica intercalar(Dinamica L1, Dinamica L2) {
 
-        Encadeada L3 = new Encadeada();
+        Dinamica L3 = new Dinamica();
 
         No p1 = L1.primeiro;
         No p2 = L2.primeiro;
@@ -104,9 +104,9 @@ public class Encadeada {
         return L3;
     }
 
-    public static Encadeada uniao(Encadeada L1, Encadeada L2) {
+    public static Dinamica uniao(Dinamica L1, Dinamica L2) {
 
-        Encadeada L3 = new Encadeada(); // nova lista vazia
+        Dinamica L3 = new Dinamica(); // nova lista vazia
 
         // Percorre L1
         for (No temp = L1.primeiro; temp != null; temp = temp.proximo) {

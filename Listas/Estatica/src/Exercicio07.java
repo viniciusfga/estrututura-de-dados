@@ -2,7 +2,7 @@ public class Exercicio07 {
 
     /*
     Considere uma lista contendo números inteiros. Escreva um método public
-    Lista extrairPares() que crie e retorne uma nova Lista contendo apenas os números
+    Generics.Lista extrairPares() que crie e retorne uma nova Generics.Lista contendo apenas os números
     pares da lista original. A lista original não deve ser modificada. Se não houver pares,
     retorne uma lista vazia.
      */

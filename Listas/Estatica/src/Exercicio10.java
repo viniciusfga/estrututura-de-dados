@@ -1,8 +1,8 @@
 public class Exercicio10 {
 
     /*
-    Implemente o método public Lista subLista(int inicio, int fim). Ele deve
-    retornar uma nova Lista contendo os elementos do índice inicio até o índice fim - 1. O
+    Implemente o método public Generics.Lista subLista(int inicio, int fim). Ele deve
+    retornar uma nova Generics.Lista contendo os elementos do índice inicio até o índice fim - 1. O
     método deve validar se os índices passados são válidos.
      */
 
