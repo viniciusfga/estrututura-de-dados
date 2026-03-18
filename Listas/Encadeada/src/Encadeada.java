@@ -1,4 +1,4 @@
-public class ListaEcadeada {
+public class Encadeada {
 
     No primeiro = null;
 
@@ -72,9 +72,9 @@ public class ListaEcadeada {
         atual.proximo = novo;
     }
 
-    public static ListaEcadeada intercalar(ListaEcadeada L1, ListaEcadeada L2) {
+    public static Encadeada intercalar(Encadeada L1, Encadeada L2) {
 
-        ListaEcadeada L3 = new ListaEcadeada();
+        Encadeada L3 = new Encadeada();
 
         No p1 = L1.primeiro;
         No p2 = L2.primeiro;
@@ -104,9 +104,9 @@ public class ListaEcadeada {
         return L3;
     }
 
-    public static ListaEcadeada uniao(ListaEcadeada L1, ListaEcadeada L2) {
+    public static Encadeada uniao(Encadeada L1, Encadeada L2) {
 
-        ListaEcadeada L3 = new ListaEcadeada(); // nova lista vazia
+        Encadeada L3 = new Encadeada(); // nova lista vazia
 
         // Percorre L1
         for (No temp = L1.primeiro; temp != null; temp = temp.proximo) {
