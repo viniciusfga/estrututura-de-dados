@@ -138,10 +138,6 @@ public class Estatica extends Lista {
         return tamanho;
     }
 
-    public boolean validaPos(int pos) {
-        return pos >= 0 && pos < tamanho;
-    }
-
     public static void main(String[] args) throws Exception {
 
         Estatica lista = new Estatica(4);

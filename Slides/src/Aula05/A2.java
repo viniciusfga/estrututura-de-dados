@@ -13,12 +13,13 @@ public class A2 {
             this.tamanho = 0;
         }
 
-        public void inserirEmOrdem(int valor){
+        public void inserirOrdenado(int valor){
             if (tamanho == elementos.length) {
                 throw new RuntimeException("Erro: A lista está cheia");
             }
 
             int posicao = 0;
+
             while (posicao < tamanho && elementos[posicao] < valor) {
                 posicao++;
             }
@@ -35,14 +36,5 @@ public class A2 {
 
     public static void main(String[] args) {
 
-        listaEstatica l = new listaEstatica(10);
-
-        l.inserirEmOrdem(2);
-        l.inserirEmOrdem(5);
-        l.inserirEmOrdem(3);
-
-        for (int i = 0; i < l.elementos.length; i++) {
-            System.out.print("[" + l.elementos[i] + "] ");
-        }
     }
 }
