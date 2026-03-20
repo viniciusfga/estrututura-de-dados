@@ -12,9 +12,7 @@ public class Encadeada extends Lista {
 
     @Override
     public void inserirInicio(int item) throws Exception {
-        Nodo novo = new Nodo();
-        novo.item = item;
-        novo.prox = null;
+        Nodo novo = new Nodo(item);
 
         if (head == null) {
             head = novo;
@@ -27,10 +25,16 @@ public class Encadeada extends Lista {
 
     @Override
     public void inserirOrdenado(int item) throws Exception {
-        Nodo novo = new Nodo();
-        novo.item = item;
+        Nodo novo = new Nodo(item);
+
         // 1. Lista vazia ou menor que o primeiro
-        if (head == null || item < head.item) {
+        if (head == null) {
+            head = novo;
+            ultimo = novo;
+            return;
+        }
+
+        if (item < head.item) {
             novo.prox = head;
             head = novo;
             return;
@@ -53,9 +57,7 @@ public class Encadeada extends Lista {
 
     @Override
     public void inserirFim(int item) throws Exception {
-        Nodo novo = new Nodo();
-        novo.item = item;
-        novo.prox = null;
+        Nodo novo = new Nodo(item);
 
         if (head == null) {
             head = novo;
