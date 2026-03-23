@@ -86,7 +86,26 @@ public class EncadeadaDupla extends Lista {
     public int remover(int chave) throws Exception {
         if (vazia()) throw new Exception("Lista vazia!");
 
-        return 0;
+        int valorRemovido = -1;
+        // Caso 1: Só um elemento
+        if(head == ultimo && head.item == chave){
+            head = null;
+            ultimo = null;
+        }
+        // Caso 2: Está no fim
+        else if (head.prox != null) {
+
+        }
+        // Meio
+        else{
+            Nodo aux = head;
+            while (aux.prox != null && aux.item != chave) {
+                aux = aux.prox;
+            }
+            valorRemovido = aux.prox.item;
+            aux.prox = aux.prox.prox;
+        }
+        return valorRemovido;
     }
 
     @Override
@@ -94,7 +113,17 @@ public class EncadeadaDupla extends Lista {
         if (vazia()) throw new Exception("Lista vazia!");
 
         int valorRemovido = ultimo.item;
-        return 0;
+        // Apenas um elemento
+        if(head == ultimo){
+            head = null;
+            ultimo = null;
+        }
+        // Mais de um elemento
+        else {
+            ultimo = ultimo.ant;
+            ultimo.prox = null;
+        }
+        return valorRemovido;
     }
 
     @Override
