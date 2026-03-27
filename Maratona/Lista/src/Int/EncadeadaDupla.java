@@ -8,7 +8,7 @@ public class EncadeadaDupla extends Lista {
     @Override
     public void inserirInicio(int item) throws Exception {
         Nodo novo = new Nodo(item);
-        if (vazia()){
+        if (vazia()) {
             head = novo;
             ultimo = novo;
         } else {
@@ -22,7 +22,7 @@ public class EncadeadaDupla extends Lista {
     public void inserirOrdenado(int item) throws Exception {
         Nodo novo = new Nodo(item);
 
-        if (vazia()){
+        if (vazia()) {
             head = novo;
             ultimo = novo;
         } else if (head.item > item) {
@@ -31,21 +31,23 @@ public class EncadeadaDupla extends Lista {
             head = novo;
         } else {
             Nodo aux = head;
-            while (aux.prox != null && aux.prox.item < item){
+            while (aux.prox != null && aux.prox.item < item) {
                 aux = aux.prox;
             }
 
             // Inserir no final
-            if(aux.prox == null){
+            if (aux.prox == null) {
                 aux.prox = novo;
                 novo.ant = aux;
                 ultimo = novo;
             }
             // Inserir no meio
-            novo.prox = aux.prox;
-            novo.ant = aux;
-            aux.prox.ant = novo;
-            aux.prox = novo;
+            else {
+                novo.prox = aux.prox;
+                novo.ant = aux;
+                aux.prox.ant = novo;
+                aux.prox = novo;
+            }
         }
     }
 
@@ -69,7 +71,7 @@ public class EncadeadaDupla extends Lista {
 
         int valorRemovido = head.item;
         // Caso 1: só um elemento
-        if (head.prox == null){
+        if (head.prox == null) {
             head = null;
             ultimo = null;
         }
@@ -86,25 +88,37 @@ public class EncadeadaDupla extends Lista {
     public int remover(int chave) throws Exception {
         if (vazia()) throw new Exception("Lista vazia!");
 
-        int valorRemovido = -1;
-        // Caso 1: Só um elemento
-        if(head == ultimo && head.item == chave){
+        Nodo aux = head;
+
+        // Procura o elemento
+        while (aux != null && aux.item != chave) {
+            aux = aux.prox;
+        }
+        // Não encontrou
+        if (aux == null) return -1;
+
+        int valorRemovido = aux.item;
+
+        // Caso 1: único elemento
+        if (head == ultimo) {
             head = null;
             ultimo = null;
         }
-        // Caso 2: Está no fim
-        else if (head.prox != null) {
-
+        // Caso 2: remover inicio
+        else if (aux == head) {
+            aux.prox.ant = null;
         }
-        // Meio
-        else{
-            Nodo aux = head;
-            while (aux.prox != null && aux.item != chave) {
-                aux = aux.prox;
-            }
-            valorRemovido = aux.prox.item;
-            aux.prox = aux.prox.prox;
+        // Caso 3: remover fim
+        else if (aux == ultimo) {
+            ultimo = aux.ant;
+            ultimo.prox = null;
         }
+        // Caso 4: remover meio
+        else {
+            aux.ant.prox = aux.prox;
+            aux.prox.ant = aux.ant;
+        }
+        // Não achou a chave
         return valorRemovido;
     }
 
@@ -114,7 +128,7 @@ public class EncadeadaDupla extends Lista {
 
         int valorRemovido = ultimo.item;
         // Apenas um elemento
-        if(head == ultimo){
+        if (head == ultimo) {
             head = null;
             ultimo = null;
         }
@@ -128,7 +142,18 @@ public class EncadeadaDupla extends Lista {
 
     @Override
     public int buscar(int chave) throws Exception {
-        return 0;
+        if (vazia()) throw new Exception("Lista vazia!");
+
+        Nodo aux = head;
+
+        while (aux != null) {
+            if (aux.item == chave) {
+                return aux.item;
+            }
+            aux = aux.prox;
+        }
+
+        return -1;
     }
 
     @Override
