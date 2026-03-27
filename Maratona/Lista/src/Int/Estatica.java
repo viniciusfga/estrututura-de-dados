@@ -14,6 +14,7 @@ public class Estatica extends Lista {
     @Override
     public void inserirInicio(int valor) throws Exception {
         if (cheia()) throw new Exception("Lista Cheia!");
+
         if (vazia()) {
             item[0] = valor;
             tamanho++;
