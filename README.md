@@ -1,20 +1,70 @@
-# 🧠 Estrutura de Dados em Java
-Repositório de estudos focado em:
-- Entender profundamente os **fundamentos de estruturas de dados**
-- Implementar tudo em **Java**
-- Resolver os **exercícios oficiais** do livro Goodrich 6ª edição
+# 📊 Estrutura de Dados
 
-Este repositório contém:
-- 📚 Conteúdo organizado capítulo por capítulo
-- 🧩 Implementações próprias (com e sem otimização)
-- 📝 Anotações fiéis e didáticas
-- 🧪 Testes e validações
-- 🎯 Soluções comentadas de cada exercício
+Projeto acadêmico desenvolvido no curso de **Sistemas de Informação – IF Goiano (Campus Urutaí)**, com foco na implementação prática de estruturas de dados e algoritmos fundamentais.
 
 ---
 
-# 🗺️ Roadmap de Aprendizado
+## 🎯 Objetivo
 
+Organizar e implementar estruturas de dados clássicas utilizando Java, com foco em:
 
+- Compreensão prática dos conceitos
+- Reutilização de código
+- Preparação para avaliações e maratonas
+- Base para projetos maiores
 
 ---
+
+## 🧠 Conteúdos abordados
+
+### 📦 Estruturas de Dados
+
+- Listas:
+    - Lista Estática (array)
+    - Lista Encadeada
+    - Lista Duplamente Encadeada
+    - Lista Circular
+- Fila
+- Pilha
+
+---
+
+### ⚙️ Algoritmos
+
+- Ordenação
+- Busca
+- Problemas clássicos:
+    - Josephus
+    - Intercalação de listas
+    - Divisão de listas
+
+---
+
+### 🧪 Exercícios
+
+- Listas de exercícios da disciplina
+- Problemas práticos
+- Implementações para fixação
+
+---
+
+## 🗂 Estrutura do Projeto
+
+```plaintext
+estrutura-de-dados/
+│
+├── docs/                  → Materiais teóricos e slides
+│
+├── src/
+│   └───│ 
+│       ├── estruturas/    → Implementações principais
+│       │   ├── base/
+│       │   ├── lista/
+│       │   ├── fila/
+│       │   └── pilha/
+│       │
+│       ├── exemplos/      → Códigos de aula
+│       │
+│       └── exercicios/    → Listas e práticas
+│
+├── README.md

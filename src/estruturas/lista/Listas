@@ -1,0 +1,62 @@
+classDiagram
+    direction TB
+
+    class Lista {
+        <<abstract>>
+        +inserirInicio(Object item) void
+        +inserirMeio(Object item) void
+        +inserirFim(Object item) void
+        +removerInicio() Object
+        +remover(Object chave) Object
+        +removerFim() Object
+        +buscar(Object chave) Object
+        +vazia() boolean
+        +cheia() boolean
+        +imprimir() void
+    }
+
+    class Estatica {
+        -Object[] dados
+        -int tamanho
+        -int capacidade
+    }
+
+    class Dinamica {
+        -Nodo head
+        -Nodo ultimo
+    }
+
+    class EncadeadaCircular {
+        -Nodo head
+        -Nodo ultimo
+    }
+
+    class Dupla {
+        -Nodo head
+        -Nodo ultimo
+    }
+
+    class DuplaCircular {
+        -Nodo head
+        -Nodo ultimo
+    }
+
+    class Nodo {
+        -Object dado
+        -Nodo prox
+        -Nodo ant
+    }
+
+    %% Herança (Generalização)
+    Lista <|-- Estatica
+    Lista <|-- Dinamica
+    Lista <|-- EncadeadaCircular
+    Lista <|-- Dupla
+    Lista <|-- DuplaCircular
+
+    %% Associações (Composição/Agregação)
+    %% Uma lista dinâmica contém referências a objetos do tipo Nodo
+    Dinamica --> Nodo : head/ultimo
+    EncadeadaCircular --> Nodo : head/ultimo
+    Dupla --> Nodo : head/ultimo
+    DuplaCircular --> Nodo : head/ultimo
