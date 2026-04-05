@@ -7,7 +7,6 @@ public abstract class Lista<T> {
     // INSERÇÃO
     public abstract void inserirInicio(T item) throws Exception;
     public abstract void inserirOrdenado(T item) throws Exception;
-    public abstract void inserirMeio(T item, int posicao) throws Exception;
     public abstract void inserirFim(T item) throws Exception;
 
     // REMOÇÃO
