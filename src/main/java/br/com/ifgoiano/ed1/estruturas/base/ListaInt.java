@@ -1,32 +1,23 @@
 package br.com.ifgoiano.ed1.estruturas.base;
 
-public abstract class ListaInt<T> {
-
-    protected int tamanho;
+public abstract class ListaInt {
 
     // INSERÇÃO
-    public abstract void inserirInicio(T item) throws Exception;
-    public abstract void inserirOrdenado(T item) throws Exception;
-    public abstract void inserirFim(T item) throws Exception;
+    public abstract void inserirInicio(int item) throws Exception;
+    public abstract void inserirOrdenado(int item) throws Exception;
+    public abstract void inserirFim(int item) throws Exception;
 
     // REMOÇÃO
-    public abstract T removerInicio() throws Exception;
-    public abstract T remover(T chave) throws Exception;
-    public abstract T removerFim() throws Exception;
+    public abstract int removerInicio() throws Exception;
+    public abstract int remover(int chave) throws Exception;
+    public abstract int removerFim() throws Exception;
 
     // BUSCA
-    public abstract T buscar(T chave);
+    public abstract int buscar(int chave) throws Exception;
 
     // ESTADO
-    public boolean vazia() {
-        return tamanho == 0;
-    }
-
+    public abstract boolean vazia() throws Exception;
     public abstract boolean cheia();
-
-    public int tamanho() {
-        return tamanho;
-    }
 
     // UTIL
     public abstract void imprimir();

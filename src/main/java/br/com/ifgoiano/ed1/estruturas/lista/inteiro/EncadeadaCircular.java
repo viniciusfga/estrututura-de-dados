@@ -1,8 +1,8 @@
 package br.com.ifgoiano.ed1.estruturas.lista.inteiro;
 
-import br.com.ifgoiano.ed1.estruturas.base.ListaGeneritcs;
+import br.com.ifgoiano.ed1.estruturas.base.ListaInt;
 
-public class EncadeadaCircular extends ListaGeneritcs {
+public class EncadeadaCircular extends ListaInt {
 
     Nodo head;
     Nodo ultimo;

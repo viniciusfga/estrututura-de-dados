@@ -1,8 +1,8 @@
 package br.com.ifgoiano.ed1.estruturas.lista.inteiro;
 
-import br.com.ifgoiano.ed1.estruturas.base.ListaGeneritcs;
+import br.com.ifgoiano.ed1.estruturas.base.ListaInt;
 
-public class EncadeadaDupla extends ListaGeneritcs {
+public class EncadeadaDupla extends ListaInt {
 
     Nodo head;
     Nodo ultimo;
@@ -108,7 +108,8 @@ public class EncadeadaDupla extends ListaGeneritcs {
         }
         // Caso 2: remover inicio
         else if (aux == head) {
-            aux.prox.ant = null;
+            head = aux.prox;
+            head.ant = null;
         }
         // Caso 3: remover fim
         else if (aux == ultimo) {

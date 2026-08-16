@@ -1,13 +1,13 @@
 package br.com.ifgoiano.ed1.estruturas.lista.inteiro;
 
-import br.com.ifgoiano.ed1.estruturas.base.ListaGeneritcs;
+import br.com.ifgoiano.ed1.estruturas.base.ListaInt;
 
-public class Encadeada extends ListaGeneritcs {
+public class Encadeada extends ListaInt {
 
     Nodo head;
     Nodo ultimo;
 
-    Encadeada() {
+    public Encadeada() {
         head = null;
         ultimo = null;
     }

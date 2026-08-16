@@ -1,8 +1,8 @@
 package br.com.ifgoiano.ed1.estruturas.lista.generics;
 
-import br.com.ifgoiano.ed1.estruturas.base.ListaInt;
+import br.com.ifgoiano.ed1.estruturas.base.Lista;
 
-public class Encadeada<T extends Comparable<T>> extends ListaInt<T> {
+public class Encadeada<T extends Comparable<T>> extends Lista<T> {
 
     Nodo<T> head;
     Nodo<T> ultimo;
@@ -75,13 +75,53 @@ public class Encadeada<T extends Comparable<T>> extends ListaInt<T> {
     }
 
     @Override
-    public T removerInicio() {
-        return null;
+    public T removerInicio() throws Exception {
+        if (vazia()) {
+            throw new Exception("Lista Vazia");
+        }
+        T valor = head.item;
+        head = head.prox;
+
+        if (head == null) {
+            ultimo = null;
+        }
+
+        return valor;
     }
 
     @Override
-    public T remover(T chave) {
-        return null;
+    public T remover(T chave) throws Exception {
+        if (vazia()) {
+            throw new Exception("Lista Vazia");
+        }
+
+        if (head.item.equals(chave)) {
+            T valor = head.item;
+            head = head.prox;
+
+            if (head == null) {
+                ultimo = null;
+            }
+
+            return valor;
+        }
+
+        Nodo<T> aux = head;
+        while (aux.prox != null && !aux.prox.item.equals(chave)) {
+            aux = aux.prox;
+        }
+        if (aux.prox == null) {
+            throw new Exception("Elemento não encontrado");
+        }
+
+        Nodo<T> removido = aux.prox;
+        T valor = removido.item;
+        aux.prox = removido.prox;
+
+        if (removido == ultimo) {
+            ultimo = aux;
+        }
+        return valor;
     }
 
     @Override
@@ -132,7 +172,7 @@ public class Encadeada<T extends Comparable<T>> extends ListaInt<T> {
 
     @Override
     public boolean cheia() {
-        return head == null;
+        return false;
     }
 
     @Override

@@ -1,8 +1,8 @@
 package br.com.ifgoiano.ed1.estruturas.lista.generics;
 
-import br.com.ifgoiano.ed1.estruturas.base.ListaInt;
+import br.com.ifgoiano.ed1.estruturas.base.Lista;
 
-public class Estatica<T extends Comparable<T>> extends ListaInt<T> {
+public class Estatica<T extends Comparable<T>> extends Lista<T> {
 
     T[] item;
     int primeiro;

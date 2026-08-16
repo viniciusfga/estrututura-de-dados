@@ -1,8 +1,8 @@
 package br.com.ifgoiano.ed1.estruturas.lista.inteiro;
 
-import br.com.ifgoiano.ed1.estruturas.base.ListaGeneritcs;
+import br.com.ifgoiano.ed1.estruturas.base.ListaInt;
 
-public class Estatica extends ListaGeneritcs {
+public class Estatica extends ListaInt {
 
     int[] item;
     int primeiro;
@@ -122,7 +122,7 @@ public class Estatica extends ListaGeneritcs {
 
     @Override
     public boolean vazia() {
-        return item[0] == 0;
+        return tamanho == 0;
     }
 
     @Override

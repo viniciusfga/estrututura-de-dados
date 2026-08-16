@@ -22,9 +22,9 @@ jobs:
           files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
 
           for file in $files; do
-            if [[ $file != src/java/br/com/ifgoiano/algoritimos/* ]]; then
+            if [[ $file != src/java/br/com/ifgoiano/algoritmos/* ]]; then
               echo "❌ Alteração não permitida: $file"
-              echo "Por favor, limite as alterações à pasta src/java/br/com/ifgoiano/algoritimos/"
+              echo "Por favor, limite as alterações à pasta src/java/br/com/ifgoiano/algoritmos/"
               exit 1
             fi
           done
